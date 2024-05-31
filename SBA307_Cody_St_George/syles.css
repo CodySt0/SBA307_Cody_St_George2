@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: black;
+  color: rgb(199, 199, 199);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 75px;
+  animation: reverse;
+}
+
+.nav a {
+  color: rgb(173, 112, 230);
+  text-decoration: none;
+  display: block;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+}
+
+.nav li {
+  margin: 25px;
+}
+
+.nav a:hover {
+  color: rgb(199, 199, 199);
+  transform: skew(40deg, 5deg);
+}
+
+.hero {
+  background-color: rgb(199, 199, 199);
+  padding: 50px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  animation-name: hero;
+  animation-duration: 2s;
+}
+
+.inner_hero {
+  width: 800px;
+  height: 100px;
+  position: sticky;
+}
+
+.hero h1 {
+  font-weight: bold;
+  margin: 0;
+}
+.hero p {
+  font-size: medium;
+  line-height: 2;
+}
+
+#mainStudioRoom {
+  display: block;
+  margin: auto;
+  width: 950px;
+  height: 500px;
+}
+
+#staff {
+  display: block;
+  margin: auto;
+  width: 950px;
+  height: 500px;
+}
+
+#mic2 {
+  display: block;
+  margin: auto;
+  width: 950px;
+  height: 500px;
+}
+
+#author {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#submitForm {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#button {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  border: 5px;
+}
+
+#button :hover {
+  color: rgb(199, 199, 199);
+  transform: skew(40deg, 5deg);
+}
+
+/* ANIMIMATION TRY */
+
+@keyframes hero {
+  from {
+    background-color: rgb(199, 199, 199);
+  }
+  to {
+    background-color: rgb(191, 105, 231);
+  }
+}
